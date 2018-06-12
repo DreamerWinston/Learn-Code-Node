@@ -1,0 +1,116 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        .main{
+            width: 90%;
+            min-width: 600px;
+            border: 1px solid #666;
+            margin: 0 auto;
+        }
+
+        #leftReveal {
+            float: left;
+            background: yellow;
+            min-width: 200px;
+        }
+
+        #rightReveal {
+            float: right;
+            background: pink;
+            min-width: 200px;
+        }
+
+        #centerReveal {
+            margin-left: 10px;
+            margin-right: 10px;
+            min-width: 600px;
+        }
+
+
+
+        #centerMain{
+
+           margin: 50px 5px 50px 5px;
+           border: 1px solid pink;
+           min-height: 800px;          
+           display: flex;  
+
+        }
+        
+
+        nav ul{
+            display: flex;
+			justify-content: space-between;
+			background: #999;
+			margin: 10px 0px;
+        }
+        .c1,.c2,.c3,.c4,.c5,.c6{
+            text-align: center
+        }
+
+        .c1 div{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <header>这是头部</header>
+
+        <nav>
+            <ul>
+                <li>百度</li>
+                <li>贴吧</li>
+                <li>新闻</li>
+                <li>音乐</li>
+                <li>知道</li>
+                <li>咨询</li>
+            </ul>
+        </nav>
+
+
+        <div id="centerMain">
+
+
+
+            <div id="leftReveal"></div>
+
+            <div id="centerReveal">
+
+                    <div class="c1">广告条
+                        
+                    </div>
+                    <div class="c2">广告条2</div>
+                    <div class="c3">广告条3</div>
+                    <div class="c4">广告条4</div>
+                    <div class="c5">广告条5</div>
+                    <div class="c6">广告条6</div>
+
+            </div>
+
+            <div id="rightReveal"></div>
+        </div>
+
+        <footer>这是尾部</footer>
+    </div>
+
+
+</body>
+
+</html>
